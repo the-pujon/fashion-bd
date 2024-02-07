@@ -1,6 +1,5 @@
 import React from "react";
 import MaxWidthWrapper from "../MaxWidthWrapper/MaxWidthWrapper";
-import Image from 'next/image';
 
 const PopularCollections = () => {
   return (
@@ -19,12 +18,12 @@ const PopularCollections = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <div className="text-xl text-primary">Fashion DB</div>
-            <div className="text-7xl">From Casual to Formal.</div>
-            <div className="text-3xl">
+            <div className="text-sm lg:text-xl text-primary">Fashion DB</div>
+            <div className=" text-3xl lg:text-5xl xl:text-7xl">From Casual to Formal.</div>
+            <div className=" text-base md:text-xl lg:text-2xl xl:text-3xl">
               Find Your Perfect Look in Our Men&apos;s Fashion Range
             </div>
-            <button className="border rounded-none px-5 py-3 bg-transparent w-fit border-primary hover:bg-primary hover:text-secondary transition-all duration-300 active:scale-95">
+            <button className="border rounded-none md:px-5 md:py-3 px-3 py-2 bg-transparent w-fit border-primary hover:bg-primary hover:text-secondary transition-all duration-300 active:scale-95">
               Shop Now
             </button>
           </div>
@@ -38,12 +37,12 @@ const PopularCollections = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <div className="text-xl text-primary">Fashion DB</div>
-            <div className="text-7xl">Unleash Your Inner Goddess</div>
-            <div className="text-3xl">
+            <div className="text-sm lg:text-xl text-primary">Fashion DB</div>
+            <div className=" text-3xl lg:text-5xl xl:text-7xl">Unleash Your Inner Goddess</div>
+            <div className=" text-base md:text-xl lg:text-2xl xl:text-3xl">
             Discover Chic Styles in Our Women&apos;s Collection
             </div>
-            <button className="border rounded-none px-5 py-3 bg-transparent w-fit border-primary hover:bg-primary hover:text-secondary transition-all duration-300 active:scale-95">
+            <button className="border rounded-none md:px-5 md:py-3 px-3 py-2 bg-transparent w-fit border-primary hover:bg-primary hover:text-secondary transition-all duration-300 active:scale-95">
               Shop Now
             </button>
           </div>
@@ -57,12 +56,12 @@ const PopularCollections = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <div className="text-xl text-primary">Fashion DB</div>
-            <div className="text-7xl">Cute Comes First </div>
-            <div className="text-3xl">
+            <div className="text-sm lg:text-xl text-primary">Fashion DB</div>
+            <div className=" text-3xl lg:text-5xl xl:text-7xl">Cute Comes First </div>
+            <div className=" text-base md:text-xl lg:text-2xl xl:text-3xl">
             Dress Your Little Ones in Our Adorable Kid&apos;s Collection
             </div>
-            <button className="border rounded-none px-5 py-3 bg-transparent w-fit border-primary hover:bg-primary hover:text-secondary transition-all duration-300 active:scale-95">
+            <button className="border rounded-none md:px-5 md:py-3 px-3 py-2 bg-transparent w-fit border-primary hover:bg-primary hover:text-secondary transition-all duration-300 active:scale-95">
               Shop Now
             </button>
           </div>
