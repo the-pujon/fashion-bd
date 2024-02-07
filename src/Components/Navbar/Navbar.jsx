@@ -9,7 +9,7 @@ import { MdOutlineMenu, MdShoppingCart } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className="shadow-lg">
+    <div className="shadow-lg sticky top-0 backdrop-blur-md ">
       <MaxWidthWrapper className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
