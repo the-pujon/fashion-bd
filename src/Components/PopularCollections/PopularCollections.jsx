@@ -5,7 +5,7 @@ const PopularCollections = () => {
   return (
     <div className="py-10">
       <MaxWidthWrapper>
-        <div className="lg:text-7xl text-center py-5">
+        <div className=" text-3xl lg:text-7xl text-center py-5">
           Check Our Popular <span className="text-primary">Collections</span>
         </div>
         <div className="grid grid-rows-3 md:grid-rows-4 grid-flow-col h-screen gap-2">

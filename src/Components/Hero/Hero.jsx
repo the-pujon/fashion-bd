@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className=" bg-primary/10">
+    <div className="py-3 bg-primary/10">
       <MaxWidthWrapper>
         <div className="flex items-center lg:h-screen flex-col-reverse lg:flex-row ">
           <div className="flex-1 flex flex-col gap-4 items-center justify-center lg:items-start text-center lg:text-start">
