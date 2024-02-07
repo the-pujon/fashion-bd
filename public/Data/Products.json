@@ -1,0 +1,122 @@
+[
+    {
+      "id": "1",
+      "image": "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      "category": "Shirts",
+      "price": 29.99,
+      "rating": 4.5,
+      "sold": 150,
+      "date": "2024-02-07",
+      "collections": ["men"],
+      "brand": "Nike",
+      "size": ["S", "M", "L", "XL"]
+    },
+    {
+      "id": "2",
+      "image": "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      "category": "Dresses",
+      "price": 49.99,
+      "rating": 4.8,
+      "sold": 200,
+      "date": "2024-02-07",
+      "collections": ["women"],
+      "brand": "Zara",
+      "size": ["XS", "S", "M"]
+    },
+    {
+      "id": "3",
+      "image": "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      "category": "Trousers",
+      "price": 39.99,
+      "rating": 4.3,
+      "sold": 100,
+      "date": "2024-02-07",
+      "collections": ["men", "women"],
+      "brand": "Adidas",
+      "size": ["S", "M", "L", "XL"]
+    },
+    {
+      "id": "4",
+      "image": "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      "category": "Jeans",
+      "price": 59.99,
+      "rating": 4.7,
+      "sold": 120,
+      "date": "2024-02-07",
+      "collections": ["men"],
+      "brand": "Levi's",
+      "size": ["30", "32", "34", "36"]
+    },
+    {
+      "id": "5",
+      "image": "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      "category": "Skirts",
+      "price": 34.99,
+      "rating": 4.6,
+      "sold": 80,
+      "date": "2024-02-07",
+      "collections": ["women"],
+      "brand": "H&M",
+      "size": ["XS", "S", "M", "L"]
+    },
+    {
+      "id": "6",
+      "image": "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      "category": "Jackets",
+      "price": 79.99,
+      "rating": 4.9,
+      "sold": 180,
+      "date": "2024-02-07",
+      "collections": ["men", "women"],
+      "brand": "The North Face",
+      "size": ["S", "M", "L", "XL"]
+    },
+    {
+      "id": "7",
+      "image": "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      "category": "Sweaters",
+      "price": 44.99,
+      "rating": 4.4,
+      "sold": 90,
+      "date": "2024-02-07",
+      "collections": ["men", "women"],
+      "brand": "Gap",
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": "8",
+      "image": "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      "category": "Blouses",
+      "price": 39.99,
+      "rating": 4.7,
+      "sold": 110,
+      "date": "2024-02-07",
+      "collections": ["women"],
+      "brand": "Forever 21",
+      "size": ["XS", "S", "M", "L"]
+    },
+    {
+      "id": "9",
+      "image": "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      "category": "Shorts",
+      "price": 24.99,
+      "rating": 4.6,
+      "sold": 70,
+      "date": "2024-02-07",
+      "collections": ["men", "women"],
+      "brand": "American Eagle",
+      "size": ["XS", "S", "M", "L"]
+    },
+    {
+      "id": "10",
+      "image": "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      "category": "Suits",
+      "price": 129.99,
+      "rating": 4.9,
+      "sold": 160,
+      "date": "2024-02-07",
+      "collections": ["men"],
+      "brand": "Calvin Klein",
+      "size": ["38R", "40R", "42R", "44R"]
+    }
+  ]
