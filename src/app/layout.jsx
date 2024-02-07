@@ -1,6 +1,7 @@
 import { Inter, Roboto_Mono, Quicksand } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Navbar/Navbar";
+import Footer from "@/Components/Footer/Footer";
 
 
 const quicksand = Quicksand({ subsets: ["latin"] });
@@ -15,7 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${quicksand.className} bg-backgroundImage`}>
         <Navbar/>
-        {children}</body>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }
