@@ -50,3 +50,26 @@
   --ring: hsl(346.8, 77.2%, 49.8%);
   --radius: 0rem;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
