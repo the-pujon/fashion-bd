@@ -18,21 +18,25 @@ const ProductCard = ({ product }) => {
 
   const cartItems = useAppSelector((state) => state.cart);
 
-  console.log(cartItems)
+  //console.log(cartItems)
 
   const dispatch = useDispatch();
 
   const handleAddCart = (product) => {
 
+    console.log("here")
+
     //console.log(quantity * product.price)
 
       const cart = {
-        id: product.id,
+        _id: product.id,
         name: product.name,
         image: product.image,
-        //quantity: quantity,
+        quantity: 1,
         price: product.price,
-        //total: quantity * product.price,
+        total:  product.price,
+        brand: product.brand,
+        collection: product.collections.join(", "),
         //sellerName: product.sellerName,
         //sellerEmail: product.sellerEmail,
         //subcategory: product.subcategory,

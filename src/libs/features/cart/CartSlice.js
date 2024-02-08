@@ -31,8 +31,8 @@ const cartSlice = createSlice({
 
       if (existingItem) {
         // If it exists, update the quantity
-        //existingItem.quantity += newItem.quantity;
-        existingItem.total += newItem.total;
+        existingItem.quantity += 1;
+        existingItem.price += newItem.price;
       } else {
         // If it doesn't exist, add the new item
         state.products.push(newItem);
@@ -41,7 +41,7 @@ const cartSlice = createSlice({
       // Update totalItem and totalPrice
       state.totalItem = state.products.length;
       state.totalPrice = state.products.reduce(
-        (total, item) => total + item.total,
+        (total, item) => total + item.price,
         0
       );
 
