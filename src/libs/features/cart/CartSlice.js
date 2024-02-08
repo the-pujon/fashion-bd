@@ -32,7 +32,7 @@ const cartSlice = createSlice({
       if (existingItem) {
         // If it exists, update the quantity
         existingItem.quantity += 1;
-        existingItem.price += newItem.price;
+        existingItem.total += newItem.price;
       } else {
         // If it doesn't exist, add the new item
         state.products.push(newItem);
@@ -48,17 +48,47 @@ const cartSlice = createSlice({
       // Save the updated cart state to local storage
       localStorage.setItem("cartState", JSON.stringify(state));
     },
+    //updateItemInCart: (state, action) => {
+    //  const updatedItem = action.payload;
+    //  const itemIndex = state.products.findIndex(
+    //    (item) => item._id === updatedItem._id
+    //  );
+    //  if (itemIndex !== -1) {
+    //    state.products[itemIndex] = updatedItem;
+    //    // Save the updated cart state to local storage
+    //    localStorage.setItem("cartState", JSON.stringify(state));
+    //  }
+    //},
     updateItemInCart: (state, action) => {
-      const updatedItem = action.payload;
-      const itemIndex = state.products.findIndex(
-        (item) => item._id === updatedItem._id
+      const {_id, quantity} = action.payload;
+      console.log(_id,quantity)
+      console.log(state)
+      // Replace the entire products array with the updated array
+      //state.products = updatedItems;
+      // Recalculate totalItem and totalPrice
+      //state.quantity = quantity
+      const existingItem = state.products.find(
+        (item) => item._id === _id
       );
-      if (itemIndex !== -1) {
-        state.products[itemIndex] = updatedItem;
-        // Save the updated cart state to local storage
-        localStorage.setItem("cartState", JSON.stringify(state));
-      }
+      existingItem.quantity = quantity;
+      existingItem.total = quantity * existingItem.price;
+
+      state.totalPrice = state.products.reduce(
+        (total, item) => total + item.price,
+        0
+      );
+
+      console.log(existingItem)
+      console.log(state)
+      //state.totalItem = state.products.length;
+      //state.totalPrice = state.products.reduce(
+      //  (total, item) => total + item.price,
+      //  0
+      //);
+      // Save the updated cart state to local storage
+      localStorage.setItem("cartState", JSON.stringify(state));
     },
+
     removeItemFromCart: (state, action) => {
       const itemIdToRemove = action.payload;
       state.products = state.products.filter(
