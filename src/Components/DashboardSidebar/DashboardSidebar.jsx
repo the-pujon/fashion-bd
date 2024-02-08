@@ -18,12 +18,11 @@ const DashboardSidebar = () => {
     <div className="flex min-h-screen justify-between flex-col w-56 bg-transparent overflow-hidden border-r border-black/40">
       <div className="flex flex-col  ">
         <div className="flex items-center justify-center flex-col gap-10 mt-5">
-          <h1 className="text-5xl font-semibold uppercase text-black ">TTH</h1>
+          <Link href='/' className="text-3xl font-semibold uppercase text-black ">Fashion BD</Link>
 
           <div className="flex flex-col items-center pb-5 -mx-2">
             <Image
               className="object-cover w-24 h-24 mx-2 rounded-full"
-              //  TODO: Admin picture
               src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
               alt="avatar"
               width={200}
