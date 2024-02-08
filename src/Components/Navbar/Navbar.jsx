@@ -6,6 +6,7 @@ import MaxWidthWrapper from "../MaxWidthWrapper/MaxWidthWrapper";
 import { MdOutlineMenu, MdShoppingCart } from "react-icons/md";
 import { useAppSelector } from "@/libs/hooks";
 import CartDropDownContent from "../CartDropDownContent/CartDropDownContent";
+import  Link  from 'next/link';
 
 const Navbar = () => {
   const [isClient, setIsClient] = useState(false);
@@ -30,10 +31,10 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 backdrop-blur-md"
             >
               <li>
-                <a>Home</a>
+                <Link href='/'>Home</Link>
               </li>
               <li>
-                <a>Products</a>
+                <Link  href="/products">Products</Link>
               </li>
             </ul>
           </div>
