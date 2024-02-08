@@ -6,7 +6,7 @@ import MaxWidthWrapper from "../MaxWidthWrapper/MaxWidthWrapper";
 import { MdOutlineMenu, MdShoppingCart } from "react-icons/md";
 import { useAppSelector } from "@/libs/hooks";
 import CartDropDownContent from "../CartDropDownContent/CartDropDownContent";
-import  Link  from 'next/link';
+import Link from "next/link";
 
 const Navbar = () => {
   const [isClient, setIsClient] = useState(false);
@@ -28,25 +28,25 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 backdrop-blur-md"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 bg-gradient-to-t from-primary/10 to-transparent bg-white"
             >
               <li>
-                <Link href='/'>Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <Link  href="/products">Products</Link>
+                <Link href="/products">Products</Link>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Fashion DB</a>
+          <Link href='/' className="btn btn-ghost text-xl">Fashion DB</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a>Products</a>
+              <Link href="/products">Products</Link>
             </li>
           </ul>
         </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
                 tabIndex={0}
                 className="mt-3 z-[1] card card-compact dropdown-content shadow  bg-white"
               >
-                 <CartDropDownContent cartItems={cartItems} />
+                <CartDropDownContent cartItems={cartItems} />
               </div>
             </div>
           )}

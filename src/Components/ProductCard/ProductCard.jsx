@@ -3,9 +3,11 @@ import Image from "next/image";
 import {MdStar} from "react-icons/md";
 import {useAppDispatch} from "@/libs/hooks";
 import {addItemToCart} from "@/libs/features/cart/CartSlice";
+import Link  from 'next/link';
 
 const ProductCard = ({ product }) => {
   const {
+    id,
     image,
     price,
     rating,
@@ -34,9 +36,9 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="shadow-md" >
-      <div>
+      <Link href={`/products/${id}`}>
         <Image src={image} alt="Product Image" height={600} width={500} />
-      </div>
+      </Link>
       <div className="p-2" >
         <div className="grid grid-cols-2 items-center justify-between">
           <div className="flex flex-col gap-1" >

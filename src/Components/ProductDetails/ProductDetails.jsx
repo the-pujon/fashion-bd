@@ -18,7 +18,7 @@ const ProductDetails = ({ productId }) => {
         const getProducts = await get("/Data/Products.json");
         console.log("getProducts,", getProducts);
 
-        const p = getProducts.find((product) => product.id !== productId);
+        const p = getProducts.find((product) => product.id === productId);
         console.log(p);
 
         setProducts(p);
