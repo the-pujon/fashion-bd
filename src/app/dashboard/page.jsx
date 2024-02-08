@@ -8,10 +8,10 @@ const Dashboard = () => {
     <div>
       <div className="px-6 h-[100vh] min-h-screen max-h-screen w-full overflow-auto">
         <div className="flex flex-col md:flex-row gap-4 w-full">
-          <DashboardCard name="users" amount={2} />
-          <DashboardCard name="products" amount={2} />
-          <DashboardCard name="orders" amount={2} />
-          <DashboardCard name="earnings" amount={2} />
+          <DashboardCard name="users" amount={20} />
+          <DashboardCard name="products" amount={36} />
+          <DashboardCard name="orders" amount={100} />
+          <DashboardCard name="earnings" amount={2083} />
         </div>
 
         {/* chart */}

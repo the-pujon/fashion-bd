@@ -28,8 +28,8 @@ export default function SalesChart() {
           {
             label: new Date().getFullYear() - 1,
             fill: false,
-            backgroundColor: "#edf2f7",
-            borderColor: "#edf2f7",
+            backgroundColor: "#4a5568",
+            borderColor: "#4a5568",
             data: [40, 68, 86, 74, 56, 60, 87],
           },
         ],
@@ -44,7 +44,7 @@ export default function SalesChart() {
         },
         legend: {
           labels: {
-            fontColor: "white",
+            fontColor: "black",
           },
           align: "end",
           position: "bottom",
@@ -61,7 +61,7 @@ export default function SalesChart() {
           xAxes: [
             {
               ticks: {
-                fontColor: "rgba(255,255,255,.7)",
+                fontColor: "rgba(0,0,0,.7)",
               },
               display: true,
               scaleLabel: {
