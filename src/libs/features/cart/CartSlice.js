@@ -48,25 +48,9 @@ const cartSlice = createSlice({
       // Save the updated cart state to local storage
       localStorage.setItem("cartState", JSON.stringify(state));
     },
-    //updateItemInCart: (state, action) => {
-    //  const updatedItem = action.payload;
-    //  const itemIndex = state.products.findIndex(
-    //    (item) => item._id === updatedItem._id
-    //  );
-    //  if (itemIndex !== -1) {
-    //    state.products[itemIndex] = updatedItem;
-    //    // Save the updated cart state to local storage
-    //    localStorage.setItem("cartState", JSON.stringify(state));
-    //  }
-    //},
     updateItemInCart: (state, action) => {
       const {_id, quantity} = action.payload;
-      console.log(_id,quantity)
-      console.log(state)
-      // Replace the entire products array with the updated array
-      //state.products = updatedItems;
-      // Recalculate totalItem and totalPrice
-      //state.quantity = quantity
+
       const existingItem = state.products.find(
         (item) => item._id === _id
       );
@@ -77,14 +61,6 @@ const cartSlice = createSlice({
         (total, item) => total + item.price,
         0
       );
-
-      console.log(existingItem)
-      console.log(state)
-      //state.totalItem = state.products.length;
-      //state.totalPrice = state.products.reduce(
-      //  (total, item) => total + item.price,
-      //  0
-      //);
       // Save the updated cart state to local storage
       localStorage.setItem("cartState", JSON.stringify(state));
     },

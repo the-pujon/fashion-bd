@@ -68,7 +68,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="bg-primary/10" >
+    <div className="bg-primary/10 py-5" >
       <MaxWidthWrapper>
         <div className="wrapper min-h-screen pt-32 text-black">
           <div className="flex gap-5">
@@ -84,7 +84,7 @@ const Cart = () => {
                 Products
               </div>
               <div className="flex items-center justify-start">
-                Seller Details
+               Category
               </div>
               <div className="flex items-center justify-start">
                 Quantity
@@ -103,7 +103,6 @@ const Cart = () => {
                     href={"/shop"}
                     className="toyButton flex items-center gap-2"
                   >
-                    {" "}
                     <MdKeyboardBackspace className="text-2xl" />
                     Shop now
                   </Link>
@@ -125,23 +124,20 @@ const Cart = () => {
                         <div className="flex flex-col">
                           <span>{product.name}</span>
                           <span className="text-sm">
-                            {product.subcategory}
+                            {product.brand}
                           </span>
                         </div>
                       </div>
                       <button
                         onClick={() => handleDelete(product._id)}
-                        className="absolute bg-black text-primary p-1 cursor-pointer rounded-full flex items-center justify-center -top-2  shadow-lg -left-2  "
+                        className="absolute bg-white text-primary p-1 cursor-pointer rounded-full flex items-center justify-center -top-2  shadow-lg -left-2  "
                       >
                         <AiOutlineClose className="text-primary text-sm" />
                       </button>
                     </div>
                     <div className="flex items-center justify-start">
                       <div className="flex flex-col">
-                        <span>{product.sellerName}</span>
-                        <span className="text-sm">
-                          {product.sellerEmail}
-                        </span>
+                        <span>{product.category}</span>
                       </div>
                     </div>
 
@@ -341,7 +337,7 @@ const Cart = () => {
                   </div>
                 </div>
 
-                <button className="toyButton w-full">
+                <button className="text-nowrap border rounded-none py-1 lg:px-3 lg:py-2 xl:px-5 xl:py-3 bg-transparent w-full border-primary hover:bg-primary hover:text-secondary transition-all duration-300 active:scale-95">
                   Checkout and place order
                 </button>
               </form>
