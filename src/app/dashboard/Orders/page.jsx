@@ -29,15 +29,6 @@ const Orders = () => {
     setRefresh(false);
   }, [refresh]);
 
-  //  useEffect(() => {
-  //    get("orders", "getOrders").then((data) => {
-  //      console.log(data)
-  //      setOrders(data);
-  //      setFilterOrders(data);
-  //    });
-  //    setRefresh(false);
-  //  }, [refresh]);
-
   //for search
   const handleChange = (e) => {
     setSearch(e.target.value);
