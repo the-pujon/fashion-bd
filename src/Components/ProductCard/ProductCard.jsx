@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import {MdStar} from "react-icons/md";
-import {useAppSelector} from "@/libs/hooks";
-import { useDispatch } from 'react-redux';
+import {useAppDispatch} from "@/libs/hooks";
 import {addItemToCart} from "@/libs/features/cart/CartSlice";
 
 const ProductCard = ({ product }) => {
@@ -15,18 +14,9 @@ const ProductCard = ({ product }) => {
     name
   } = product;
 
-
-  const cartItems = useAppSelector((state) => state.cart);
-
-  //console.log(cartItems)
-
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const handleAddCart = (product) => {
-
-    console.log("here")
-
-    //console.log(quantity * product.price)
 
       const cart = {
         _id: product.id,
@@ -37,13 +27,9 @@ const ProductCard = ({ product }) => {
         total:  product.price,
         brand: product.brand,
         collection: product.collections.join(", "),
-        //sellerName: product.sellerName,
-        //sellerEmail: product.sellerEmail,
-        //subcategory: product.subcategory,
         category: product.category,
       };
       dispatch(addItemToCart( cart));
-      //toast.success("Added Successfully")
   };
 
   return (
