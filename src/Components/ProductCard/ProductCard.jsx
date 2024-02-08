@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import {MdStar} from "react-icons/md";
+import {useAppSelector} from "@/libs/hooks";
+import { useDispatch } from 'react-redux';
+import {addItemToCart} from "@/libs/features/cart/CartSlice";
 
 const ProductCard = ({ product }) => {
   const {
@@ -11,6 +14,34 @@ const ProductCard = ({ product }) => {
     brand,
     name
   } = product;
+
+
+  const cartItems = useAppSelector((state) => state.cart);
+
+  console.log(cartItems)
+
+  const dispatch = useDispatch();
+
+  const handleAddCart = (product) => {
+
+    //console.log(quantity * product.price)
+
+      const cart = {
+        id: product.id,
+        name: product.name,
+        image: product.image,
+        //quantity: quantity,
+        price: product.price,
+        //total: quantity * product.price,
+        //sellerName: product.sellerName,
+        //sellerEmail: product.sellerEmail,
+        //subcategory: product.subcategory,
+        category: product.category,
+      };
+      dispatch(addItemToCart( cart));
+      //toast.success("Added Successfully")
+  };
+
   return (
     <div className="shadow-md" >
       <div>
@@ -29,7 +60,7 @@ const ProductCard = ({ product }) => {
           </div>
         </div>
         <div className="flex items-center justify-between gap-3 mt-2">
-          <button className="text-nowrap border rounded-none py-1 lg:px-3 lg:py-2 xl:px-5 xl:py-3 bg-transparent w-full border-primary hover:bg-primary hover:text-secondary transition-all duration-300 active:scale-95">
+          <button onClick={()=>handleAddCart(product)} className="text-nowrap border rounded-none py-1 lg:px-3 lg:py-2 xl:px-5 xl:py-3 bg-transparent w-full border-primary hover:bg-primary hover:text-secondary transition-all duration-300 active:scale-95">
             Add to cart
           </button>
           <button className="text-nowrap border rounded-none py-1 lg:px-3 lg:py-2 xl:px-5 xl:py-3 bg-transparent w-full border-primary hover:bg-primary hover:text-secondary transition-all duration-300 active:scale-95">

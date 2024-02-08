@@ -10,8 +10,8 @@ const OurModels = () => {
           Meet our famous <span className="text-primary">Models</span>
         </div>
         <div className="p-5 sm:p-8 h-screen overflow-auto">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 -z-10">
-            <div class="grid gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 -z-10">
+            <div className="grid gap-4">
               <div className="relative group h-fit">
                 <Image
                   src="/Image/1.jpeg"
@@ -43,7 +43,7 @@ const OurModels = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-70 rounded-lg transition duration-500 ease-in-out group-hover:opacity-0"></div>
               </div>
             </div>
-            <div class="grid gap-4">
+            <div className="grid gap-4">
               <div className="relative group h-fit">
                 <Image
                   src="/Image/4.avif"
@@ -85,7 +85,7 @@ const OurModels = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-70 rounded-lg transition duration-500 ease-in-out group-hover:opacity-0"></div>
               </div>
             </div>
-            <div class="grid gap-4">
+            <div className="grid gap-4">
               <div className="relative group h-fit">
                 <Image
                   src="/Image/7.jpg"
@@ -127,7 +127,7 @@ const OurModels = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-70 rounded-lg transition duration-500 ease-in-out group-hover:opacity-0"></div>
               </div>
             </div>
-            <div class="grid gap-4">
+            <div className="grid gap-4">
               <div className="relative group h-fit">
                 <Image
                   src="/Image/10.avif"
